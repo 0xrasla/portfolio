@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import 'tailwindcss';
+
+:root {
+	--font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+	--bg: hsl(0 0% 100%);
+	--fg: hsl(222 47% 11%);
+	--muted: hsl(215 16% 47%);
+	--border: hsl(214 32% 91%);
+	--accent: 160 84% 39%;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: hsl(222 47% 6%);
+		--fg: hsl(210 40% 96%);
+		--muted: hsl(217 15% 65%);
+		--border: hsl(217 33% 18%);
+	}
+}
+
+html { font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+body { background: var(--bg); color: var(--fg); }
+
+/* Color utility tokens mapped to Tailwind style names */
+:root {
+	--tw-color-bg: var(--bg);
+	--tw-color-foreground: var(--fg);
+	--tw-color-muted: var(--muted);
+	--tw-color-border: var(--border);
+}
+
+/* Utility classes (minimal set) */
+.bg-bg { background-color: var(--bg); }
+.text-muted { color: var(--muted); }
+.text-foreground { color: var(--fg); }
+.border-border { border-color: var(--border); }
+
+/* Animated in base (leverages built-in arbitrary names used earlier) */
+@keyframes fade-in { from { opacity:0 } to { opacity:1 } }
+@keyframes slide-in-from-bottom-4 { from { transform: translateY(1rem) } to { transform: translateY(0) } }
+@keyframes slide-in-from-top-4 { from { transform: translateY(-1rem) } to { transform: translateY(0) } }
+@keyframes slide-in-from-left-4 { from { transform: translateX(-1rem) } to { transform: translateX(0) } }
+@keyframes slide-in-from-right-4 { from { transform: translateX(1rem) } to { transform: translateX(0) } }
+@keyframes slide-in-from-bottom-6 { from { transform: translateY(1.5rem) } to { transform: translateY(0) } }
+
+.animate-in { animation-fill-mode: both; }
+.fade-in { animation-name: fade-in; }
+.slide-in-from-bottom-4 { animation-name: slide-in-from-bottom-4, fade-in; }
+.slide-in-from-top-4 { animation-name: slide-in-from-top-4, fade-in; }
+.slide-in-from-left-4 { animation-name: slide-in-from-left-4, fade-in; }
+.slide-in-from-right-4 { animation-name: slide-in-from-right-4, fade-in; }
+.slide-in-from-bottom-6 { animation-name: slide-in-from-bottom-6, fade-in; }
+
+/* unify duration and easing */
+[class*='slide-in-'], .fade-in { animation-duration: .65s; animation-timing-function: cubic-bezier(.16,.84,.44,1); }
+
+/* Basic prose refinements */
+h1,h2,h3 { letter-spacing:-0.02em; }
+h1 { font-weight:600; }
+h2 { font-weight:600; }
+p { text-wrap:pretty; }
+code, .code-like { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: hsl(var(--accent)/0.08); padding:2px 5px; border-radius:4px; font-size: .75rem; color:hsl(var(--accent)); }
+hr { border:0; height:1px; background:linear-gradient(90deg,transparent,var(--border),transparent); margin:3rem auto; max-width:640px; opacity:.6; }
+
+/* Scrollbar minimal */
+* { scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+*::-webkit-scrollbar { width:8px; }
+*::-webkit-scrollbar-track { background:transparent; }
+*::-webkit-scrollbar-thumb { background:var(--border); border-radius:4px; }
+
+/* Link focus */
+a { outline: none; }
+a:focus-visible { box-shadow: 0 0 0 2px hsl(var(--accent)/.5); border-radius:4px; }
