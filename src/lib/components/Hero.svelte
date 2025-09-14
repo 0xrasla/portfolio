@@ -68,7 +68,7 @@
           on:click={scrollContact}
           class="inline-flex items-center gap-2 rounded-md bg-emerald-500/90 text-white px-4 py-2 text-xs md:text-sm font-medium shadow-sm hover:bg-emerald-500 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-emerald-500/60"
         >
-          <Icon icon="lucide:sparkles" class="h-4 w-4" /> Hire / Contact
+          <Icon icon="lucide:sparkles" class="h-4 w-4" /> Contact Me
         </button>
       </div>
       <div

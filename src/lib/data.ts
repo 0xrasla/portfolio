@@ -1,4 +1,3 @@
-// Central data & types for the portfolio
 export interface WorkExperience {
   period: string;
   role: string;
@@ -10,7 +9,33 @@ export interface WorkExperience {
 
 export const workExperience: WorkExperience[] = [
   {
-    period: "Oct 2023 - Present",
+    period: "Sep 2025 - Present",
+    role: "Senior Software Engineer",
+    company: "Radiantze, USA (Remote)",
+    description:
+      "Architecting an AI-driven product suite, designing advanced backend infrastructure (event-driven services, scalable APIs, distributed caching), and leading/mentoring junior engineers on code quality, testing, and system design.",
+    skills: [
+      "TypeScript",
+      "Svelte",
+      "React",
+      "Bun",
+      "Next.js",
+      "AWS",
+      "Docker",
+      "Python",
+      "FastAPI",
+      "Three.js",
+      "LLM",
+    ],
+    achievements: [
+      "Architected an AI retrieval-augmented generation (RAG) pipeline with vector search (pgvector/Qdrant) to power semantic chat and auto-summarization features",
+      "Integrated multiple LLM providers (OpenAI / Anthropic) behind a unified abstraction to enable smart routing and cost optimization",
+      "Built GPU/CPU hybrid job orchestration for embedding + inference workloads using a Bun microservice layer and FastAPI async workers",
+      "Implemented real-time 3D models for realtime collabration with ai",
+    ],
+  },
+  {
+    period: "Oct 2023 - Sep 2025",
     role: "Senior Software Engineer",
     company: "Wenoxo Technologies Private Limited, Nagercoil",
     description:
@@ -25,11 +50,13 @@ export const workExperience: WorkExperience[] = [
       "Next.js",
       "Drizzle",
       "Linux",
+      "Three.js",
     ],
     achievements: [
       "Led the redesign of a legacy module to increase performance by 65%",
       "Introduced best practices for scalable architecture and modular code structure",
       "Mentored junior developers on design patterns and testing strategies",
+      "Implemented an interactive 3D data visualization widget in Next.js (Three.js) improving user engagement metrics",
     ],
   },
   {
@@ -56,7 +83,7 @@ export const workExperience: WorkExperience[] = [
   {
     period: "Dec 2021 - May 2022",
     role: "Full Stack Developer",
-    company: "Theecode Technologies Pvt Ltd",
+    company: "Theecode Technologies Pvt Ltd, Chennai",
     description:
       "Worked on developing modular, maintainable full-stack applications using modern JavaScript and database technologies. Contributed to both frontend and backend features and bug fixes.",
     skills: ["React", "Node.js", "MongoDB", "Express", "Angular", "Git"],
@@ -249,19 +276,19 @@ export const videos: Video[] = [
 export interface SocialLink {
   label: string;
   url: string;
-  icon?: string; // name for icon system later
+  icon?: string;
 }
 
 export const socialLinks: SocialLink[] = [
   { label: "GitHub", url: "https://github.com/0xrasla", icon: "lucide:github" },
   {
     label: "Twitter / X",
-    url: "https://twitter.com/yourhandle",
+    url: "https://x.com/0xRasla",
     icon: "lucide:twitter",
   },
   {
     label: "LinkedIn",
-    url: "https://www.linkedin.com/in/thinesh-rasla",
+    url: "https://www.linkedin.com/in/thinesh-rasla-779ba2189",
     icon: "lucide:linkedin",
   },
   {
@@ -269,7 +296,7 @@ export const socialLinks: SocialLink[] = [
     url: "https://www.youtube.com/@MyCodingDiary",
     icon: "lucide:youtube",
   },
-  { label: "Email", url: "mailto:hello@your-website.com", icon: "lucide:mail" },
+  { label: "Email", url: "mailto:thineshrasla@gmail.com", icon: "lucide:mail" },
 ];
 
 export const siteMeta = {
@@ -289,9 +316,9 @@ export const siteMeta = {
     "Next.js portfolio",
   ],
   author: "Thinesh Rasla",
-  url: "https://your-website.com",
-  ogImage: "https://your-website.com/og-image.png",
+  url: "https://rasla.me/",
+  ogImage: "https://avatars.githubusercontent.com/u/76244740?v=4",
   twitter: {
-    handle: "@yourhandle",
+    handle: "@0xRasla",
   },
 };

@@ -44,6 +44,16 @@
   intro="I teach & share what I learn on YouTube –<br> here are a few recent uploads."
 >
   <VideosSection />
+  <div class="mt-8 text-center">
+    <a
+      href="https://www.youtube.com/@MyCodingDiary"
+      target="_blank"
+      rel="noopener"
+      class="inline-flex items-center gap-2 text-xs font-semibold tracking-wide uppercase text-muted hover:text-foreground transition-colors"
+    >
+      Browse more on YouTube <span class="i-lucide-arrow-right h-3 w-3"></span>
+    </a>
+  </div>
 </Section>
 
 <Section
