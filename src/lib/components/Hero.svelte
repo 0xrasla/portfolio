@@ -1,7 +1,7 @@
 <script lang="ts">
   import { socialLinks } from "$lib/data";
   import Icon from "@iconify/svelte";
-  const headline = "Full‑Stack Developer & Open Source Builder";
+  const headline = "Full‑Stack Engineer & Open Source Builder";
   const sub =
     "I craft fast, minimal, accessible products with TypeScript, Svelte, React & modern backend stacks. Currently shipping scalable systems at Wenoxo and sharing what I learn.";
   const avatar = "https://avatars.githubusercontent.com/u/76244740?v=4";

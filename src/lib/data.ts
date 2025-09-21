@@ -144,6 +144,21 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
+    title: "Logify - Logging Middleware",
+    description:
+      "A beautiful, fast, and type-safe logging middleware for Node.js web applications.",
+    image: "",
+    tags: ["Node.js", "Elysia.js", "Express.js"],
+    github: "https://github.com/0xrasla/logify",
+    demo: "",
+    stats: {
+      stars: 18,
+      views: 0,
+      forks: 0,
+    },
+  },
+  {
+    id: 2,
     title: "Dropit - Drag & Drop Component",
     description:
       "A simple, beautiful React drag-and-drop file picker built with shadcn/ui",
@@ -158,21 +173,7 @@ export const projects: Project[] = [
       forks: 0,
     },
   },
-  {
-    id: 2,
-    title: "Logify - Logging Middleware",
-    description:
-      "A beautiful, fast, and type-safe logging middleware for Node.js web applications.",
-    image: "",
-    tags: ["Node.js", "Elysia.js", "Express.js"],
-    github: "https://github.com/0xrasla/logify",
-    demo: "",
-    stats: {
-      stars: 13,
-      views: 0,
-      forks: 0,
-    },
-  },
+
   {
     id: 3,
     title: "Multiplayer Tic Tac Toe",

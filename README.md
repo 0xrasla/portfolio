@@ -44,4 +44,5 @@ Ready for Vercel (`@sveltejs/adapter-vercel`). After pushing to GitHub, import r
 - Theme toggle (currently system-based)
 
 MIT License.
+
 # portfolio

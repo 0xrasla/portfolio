@@ -8,7 +8,7 @@
   href={project.demo || project.github}
   target="_blank"
   rel="noopener"
-  class="group block rounded-xl border border-border/60 bg-bg/40 backdrop-blur hover:bg-bg/70 transition-colors overflow-hidden ring-0 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-emerald-500"
+  class="group rounded-xl border border-border/60 bg-bg/40 backdrop-blur hover:bg-bg/70 transition-colors overflow-hidden ring-0 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-emerald-500 h-full flex flex-col"
 >
   <div class="relative aspect-video w-full overflow-hidden">
     {#if project.image}
@@ -27,7 +27,7 @@
       class="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg/80 via-bg/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
     ></div>
   </div>
-  <div class="p-4 flex flex-col gap-2">
+  <div class="p-4 flex flex-col gap-2 flex-grow">
     <h3 class="font-semibold text-sm md:text-base tracking-tight leading-snug">
       {project.title}
     </h3>
