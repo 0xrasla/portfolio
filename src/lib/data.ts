@@ -274,6 +274,91 @@ export const videos: Video[] = [
   },
 ];
 
+export interface BlogPost {
+  id: number;
+  title: string;
+  description: string;
+  content?: string;
+  tags: string[];
+  publishedAt: string;
+  readTime: string;
+  slug: string;
+  featured?: boolean;
+}
+
+export const blogPosts: BlogPost[] = [
+  {
+    id: 1,
+    title: "Getting Started with Svelte 5: The Future of Reactive UI",
+    description: "Discover the revolutionary features of Svelte 5, including runes, improved reactivity, and enhanced developer experience that makes building web apps more intuitive than ever.",
+    tags: ["svelte", "javascript", "web-development"],
+    publishedAt: "2024-09-28",
+    readTime: "8 min read",
+    slug: "getting-started-with-svelte-5",
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "Building Modern Web Apps: My Development Journey",
+    description: "A reflection on my journey as a web developer, the tools I use, and the lessons learned while building modern web applications.",
+    tags: ["web-development", "career", "tools"],
+    publishedAt: "2024-09-20",
+    readTime: "6 min read",
+    slug: "my-development-journey",
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "Bun Runtime: The Fastest JavaScript Runtime Revolutionizing Development",
+    description: "Explore Bun's groundbreaking performance improvements, native TypeScript support, and how it's changing the JavaScript ecosystem with its all-in-one toolkit approach.",
+    tags: ["bun", "javascript", "performance", "nodejs"],
+    publishedAt: "2024-09-15",
+    readTime: "10 min read",
+    slug: "bun-runtime-revolution",
+    featured: true,
+  },
+  {
+    id: 4,
+    title: "Linux Kernel 6.11: New Features and Performance Improvements",
+    description: "Deep dive into Linux Kernel 6.11's latest features including improved scheduling, better hardware support, and enhanced security features that every developer should know.",
+    tags: ["linux", "kernel", "performance", "open-source"],
+    publishedAt: "2024-09-10",
+    readTime: "7 min read",
+    slug: "linux-kernel-611-features",
+    featured: false,
+  },
+  {
+    id: 5,
+    title: "SvelteKit vs Next.js: Choosing the Right Meta-Framework in 2024",
+    description: "Comprehensive comparison of SvelteKit and Next.js covering performance, developer experience, ecosystem, and use cases to help you make informed decisions.",
+    tags: ["svelte", "nextjs", "frameworks", "comparison"],
+    publishedAt: "2024-09-05",
+    readTime: "12 min read",
+    slug: "sveltekit-vs-nextjs-2024",
+    featured: true,
+  },
+  {
+    id: 6,
+    title: "Modern CSS: Container Queries and the Future of Responsive Design",
+    description: "Learn how container queries are revolutionizing responsive design, moving beyond media queries to create more flexible and maintainable CSS architectures.",
+    tags: ["css", "responsive-design", "web-development", "frontend"],
+    publishedAt: "2024-08-28",
+    readTime: "9 min read",
+    slug: "modern-css-container-queries",
+    featured: false,
+  },
+  {
+    id: 7,
+    title: "TypeScript 5.5: New Features and Performance Improvements",
+    description: "Exploring TypeScript 5.5's latest features including improved type inference, faster compilation times, and enhanced developer productivity features.",
+    tags: ["typescript", "javascript", "type-safety", "performance"],
+    publishedAt: "2024-08-20",
+    readTime: "8 min read",
+    slug: "typescript-55-features",
+    featured: false,
+  },
+];
+
 export interface SocialLink {
   label: string;
   url: string;

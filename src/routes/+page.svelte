@@ -1,5 +1,6 @@
 <script lang="ts">
   import { reveal } from "$lib/anim";
+  import BlogPreview from "$lib/components/BlogPreview.svelte";
   import ContactForm from "$lib/components/ContactForm.svelte";
   import ExperienceTimeline from "$lib/components/ExperienceTimeline.svelte";
   import Footer from "$lib/components/Footer.svelte";
@@ -52,6 +53,22 @@
       class="inline-flex items-center gap-2 text-xs font-semibold tracking-wide uppercase text-muted hover:text-foreground transition-colors"
     >
       Browse more on YouTube <span class="i-lucide-arrow-right h-3 w-3"></span>
+    </a>
+  </div>
+</Section>
+
+<Section
+  id="blog"
+  title="Latest Blog Posts"
+  intro="Thoughts on web development, technology, and programming.<br> Sharing what I learn along the way."
+>
+  <BlogPreview />
+  <div class="mt-8 text-center">
+    <a
+      href="/blog"
+      class="inline-flex items-center gap-2 text-xs font-semibold tracking-wide uppercase text-muted hover:text-foreground transition-colors"
+    >
+      Read more posts <span class="i-lucide-arrow-right h-3 w-3"></span>
     </a>
   </div>
 </Section>

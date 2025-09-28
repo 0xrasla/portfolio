@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Header from "$lib/components/Header.svelte";
   import { siteMeta } from "$lib/data";
   import "../app.css";
   let { children } = $props();
@@ -51,6 +52,8 @@
 </svelte:head>
 
 <div class="mouse-flare" bind:this={flareEl}></div>
+
+<Header />
 
 {@render children?.()}
 

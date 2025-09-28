@@ -12,7 +12,7 @@
 </script>
 
 <section class="relative overflow-hidden">
-  <div class="mx-auto max-w-5xl px-4 md:px-6 pt-16 md:pt-28 pb-20">
+  <div class="mx-auto max-w-5xl px-4 md:px-6 pt-24 md:pt-36 pb-20">
     <div class="space-y-8">
       <div
         class="flex items-center gap-4 animate-in fade-in slide-in-from-top-4 duration-700"
