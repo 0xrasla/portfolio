@@ -11,6 +11,15 @@
 	let initialLoading = $state(true);
 </script>
 
+<svelte:head>
+	<!-- Global OG tags inherited by every page -->
+	<meta property="og:locale" content="en" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content={$page.url.href} />
+	<meta property="og:logo" content="https://v2.rasla.me/favicon-96x96.png" />
+	<meta property="og:site_name" content="0xRasla" />
+</svelte:head>
+
 {#if initialLoading}
 	<div
 		out:fly={{ y: -1500, duration: 1000, easing: cubicInOut }}
