@@ -4,6 +4,11 @@
         name="description"
         content="I'm Thinesh Rasla (aka 0xRasla), a passionate full-stack developer from India. I build clean web & mobile apps with React, Svelte, and Flutter."
     />
+    <meta property="og:title" content="Thinesh Rasla | 0xRasla — My Coding Diary" />
+    <meta property="og:description" content="I'm Thinesh Rasla (aka 0xRasla), a passionate full-stack developer from India. I build clean web & mobile apps with React, Svelte, and Flutter." />
+    <meta property="og:image" content="/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/og.png" />
 </svelte:head>
 
 <main class="max-w-container-max mx-auto px-margin">
