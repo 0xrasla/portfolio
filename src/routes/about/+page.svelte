@@ -1,3 +1,7 @@
+<script>
+    import { reveal } from '$lib/actions/reveal';
+</script>
+
 <svelte:head>
     <title>About | Thinesh Rasla</title>
     <meta
@@ -14,9 +18,9 @@
     <meta name="twitter:image" content="/og.jpg" />
 </svelte:head>
 
-<main class="max-w-container-max mx-auto px-margin py-24">
+<main class="max-w-container-max mx-auto px-margin py-10 md:py-24">
     <!-- Hero Section -->
-    <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-24 items-start border-b border-primary pb-12">
+    <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-24 items-start border-b border-primary pb-12" use:reveal>
         <div class="md:col-span-8 flex flex-col gap-4">
             <div class="flex items-center gap-2 mb-2 opacity-80 font-label-mono text-caption uppercase tracking-widest text-secondary">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
@@ -42,7 +46,7 @@
         </div>
     </section>
     <!-- Expertise Grid -->
-    <section class="mb-24 border-t border-outline-variant pt-12">
+    <section class="mb-24 border-t border-outline-variant pt-12" use:reveal>
         <div class="flex items-center gap-4 mb-12">
             <span class="material-symbols-outlined text-primary-fixed-dim"
                 >terminal</span
@@ -231,7 +235,7 @@
         </div>
     </section>
     <!-- Experience Timeline -->
-    <section class="mb-24">
+    <section class="mb-24" use:reveal>
         <div class="flex items-center gap-4 mb-12">
             <span class="material-symbols-outlined text-primary-fixed-dim"
                 >history</span
@@ -389,7 +393,7 @@
         </div>
     </section>
     <!-- Final Callout Bento Grid -->
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6" use:reveal>
         <div
             class="md:col-span-2 bg-primary p-12 flex flex-col justify-between min-h-[300px]"
         >

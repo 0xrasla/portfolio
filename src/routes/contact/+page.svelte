@@ -1,11 +1,15 @@
+<script>
+    import { reveal } from '$lib/actions/reveal';
+</script>
+
 <svelte:head>
     <title>Contact | Thinesh Rasla</title>
     <meta name="description" content="Get in touch with Thinesh Rasla for your next project." />
 </svelte:head>
 
-<main class="grow max-w-container-max mx-auto px-margin w-full pt-16 pb-24">
+<main class="grow max-w-container-max mx-auto px-margin w-full pt-8 md:pt-16 pb-12 md:pb-24">
     <!-- Header -->
-    <header class="flex flex-col md:flex-row justify-between items-end gap-gutter border-b border-primary pb-12 mb-12">
+    <header class="flex flex-col md:flex-row justify-between items-end gap-gutter border-b border-primary pb-12 mb-12" use:reveal>
         <div class="flex flex-col gap-4">
             <div class="flex items-center gap-2 mb-2 opacity-80 font-label-mono text-caption uppercase tracking-widest text-secondary">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
@@ -22,7 +26,7 @@
     </header>
     <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
         <!-- Sidebar / Technical Details -->
-        <aside class="md:col-span-4 order-2 md:order-1">
+        <aside class="md:col-span-4 order-2 md:order-1" use:reveal={{ delay: 100 }}>
             <div class="space-y-12">
                 <section>
                     <h3
@@ -101,7 +105,7 @@
             </div>
         </aside>
         <!-- Inquiry Form -->
-        <section class="md:col-span-8 order-1 md:order-2">
+        <section class="md:col-span-8 order-1 md:order-2" use:reveal={{ delay: 200 }}>
             <form class="space-y-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Name Field -->

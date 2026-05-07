@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { spring } from "svelte/motion";
+	import { Spring } from "svelte/motion";
 
 	let clientX = $state(-100);
 	let clientY = $state(-100);
@@ -8,9 +8,15 @@
 	let isHovering = $state(false);
 	let isPointerFine = $state(false);
 
-	const cursor = spring(
-		{ x: -100, y: -100 },
-		{ stiffness: 0.15, damping: 0.5 },
+	const cursor = new Spring(
+		{
+			x: -100,
+			y: -100,
+		},
+		{
+			stiffness: 0.15,
+			damping: 0.5,
+		},
 	);
 
 	onMount(() => {
@@ -54,7 +60,7 @@
 
 {#if isPointerFine}
 	<div
-		class="fixed inset-0 pointer-events-none z-[9999] transition-opacity duration-300"
+		class="fixed inset-0 pointer-events-none z-9999 transition-opacity duration-300"
 		style="opacity: {isVisible ? 1 : 0};"
 	>
 		<!-- Outer circle -->

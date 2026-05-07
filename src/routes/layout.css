@@ -116,6 +116,12 @@
   body {
     @apply bg-background text-on-background font-body-md technical-grid min-h-screen;
   }
+  
+  @media (max-width: 767px) {
+    :root {
+      --spacing-margin: 20px;
+    }
+  }
 }
 
 @utility technical-grid {
@@ -132,3 +138,10 @@
     from, to { color: transparent }
     50% { color: currentColor }
 }
+
+@custom-variant data-open (&[data-state="open"]);
+@custom-variant data-closed (&[data-state="closed"]);
+@custom-variant data-side-right (&[data-side="right"]);
+@custom-variant data-side-left (&[data-side="left"]);
+@custom-variant data-side-top (&[data-side="top"]);
+@custom-variant data-side-bottom (&[data-side="bottom"]);

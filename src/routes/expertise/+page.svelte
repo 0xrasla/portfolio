@@ -1,11 +1,15 @@
+<script>
+    import { reveal } from '$lib/actions/reveal';
+</script>
+
 <svelte:head>
     <title>Expertise | Thinesh Rasla</title>
     <meta name="description" content="Technical expertise and skills of Thinesh Rasla." />
 </svelte:head>
 
-<main class="max-w-container-max mx-auto px-margin pt-24 pb-32 flex flex-col gap-16">
+<main class="max-w-container-max mx-auto px-margin pt-10 md:pt-24 pb-16 md:pb-32 flex flex-col gap-16">
     <!-- Header -->
-    <header class="flex flex-col gap-4 border-b border-primary pb-12">
+    <header class="flex flex-col gap-4 border-b border-primary pb-12" use:reveal>
         <div class="flex items-center gap-2 mb-2 opacity-80 font-label-mono text-caption uppercase tracking-widest text-secondary">
             <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
             <span>Module // Expertise.exe</span>
@@ -19,7 +23,7 @@
     </header>
 
     <!-- Skill Matrix Grid -->
-    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" use:reveal={{ delay: 100 }}>
         <!-- Frontend -->
         <div class="group border border-primary p-8 hover:bg-surface-container transition-all duration-300 relative overflow-hidden bg-white">
             <div class="absolute top-0 right-0 w-16 h-16 bg-secondary/10 translate-x-8 -translate-y-8 rounded-full blur-2xl group-hover:bg-secondary/20 transition-all"></div>
@@ -115,7 +119,7 @@
     </section>
 
     <!-- Deep Dives / Focus Areas -->
-    <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8">
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8" use:reveal={{ delay: 200 }}>
         <div class="flex flex-col gap-8">
             <h2 class="font-headline-md text-headline-md uppercase text-primary">Core Principles</h2>
             

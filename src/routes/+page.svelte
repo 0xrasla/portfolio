@@ -1,3 +1,7 @@
+<script>
+    import { reveal } from '$lib/actions/reveal';
+</script>
+
 <svelte:head>
     <title>Thinesh Rasla (0xRasla) — Full-Stack Dev from India</title>
     <meta
@@ -22,7 +26,7 @@
 
 <main class="max-w-container-max mx-auto px-margin">
     <!-- Hero Section -->
-    <section class="py-24 md:py-32 flex flex-col gap-8">
+    <section class="py-10 md:py-32 flex flex-col gap-8" use:reveal>
         <div
             class="bg-primary text-on-primary p-6 md:p-10 border border-primary w-full max-w-4xl self-start"
         >
@@ -68,7 +72,7 @@
     </section>
     <!-- Stats / Details Strip -->
     <section
-        class="grid grid-cols-2 md:grid-cols-4 border-y border-primary py-8 gap-gutter"
+        class="grid grid-cols-2 md:grid-cols-4 border-y border-primary py-8 gap-gutter" use:reveal={{ delay: 200 }}
     >
         <div class="flex flex-col gap-2">
             <span class="font-label-mono text-caption text-secondary uppercase"
@@ -100,7 +104,7 @@
         </div>
     </section>
     <!-- Services Section -->
-    <section class="py-24 border-b border-primary">
+    <section class="py-10 md:py-24 border-b border-primary" use:reveal>
         <div class="flex justify-between items-end mb-12 border-l-4 border-secondary pl-6">
             <div>
                 <span class="font-label-mono text-label-mono text-secondary uppercase">Services</span>
@@ -126,7 +130,7 @@
         </div>
     </section>
     <!-- Featured Work Section -->
-    <section class="py-24">
+    <section class="py-10 md:py-24" use:reveal>
         <div
             class="flex justify-between items-end mb-12 border-l-4 border-secondary pl-6"
         >
@@ -284,7 +288,7 @@
         </div>
     </section>
     <!-- Development Process Section -->
-    <section class="py-24 border-t border-primary">
+    <section class="py-10 md:py-24 border-t border-primary" use:reveal>
         <div class="flex justify-between items-end mb-12 border-l-4 border-secondary pl-6">
             <div>
                 <span class="font-label-mono text-label-mono text-secondary uppercase">Process</span>
@@ -315,7 +319,7 @@
         </div>
     </section>
     <!-- Technical Expertise Grid -->
-    <section class="py-24 border-t border-primary">
+    <section class="py-10 md:py-24 border-t border-primary" use:reveal>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>
                 <h2 class="font-headline-md text-headline-md uppercase mb-8">

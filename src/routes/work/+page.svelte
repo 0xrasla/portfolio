@@ -1,4 +1,5 @@
 <script>
+    import { reveal } from '$lib/actions/reveal';
     const filters = [
         "All Projects",
         "Svelte",
@@ -86,9 +87,9 @@
     />
 </svelte:head>
 
-<main class="grow w-full max-w-container-max mx-auto px-margin py-16">
+<main class="grow w-full max-w-container-max mx-auto px-margin py-8 md:py-16">
     <!-- Header -->
-    <header class="flex flex-col gap-4 border-b border-primary pb-12 mb-12">
+    <header class="flex flex-col gap-4 border-b border-primary pb-12 mb-12" use:reveal>
         <div class="flex items-center gap-2 mb-2 opacity-80 font-label-mono text-caption uppercase tracking-widest text-secondary">
             <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
             <span>Module // Projects.exe</span>
@@ -102,7 +103,7 @@
     </header>
     <!-- Filter Bar -->
     <div
-        class="mb-12 flex flex-wrap items-center gap-4 border-y border-outline-variant py-4"
+        class="mb-12 flex flex-wrap items-center gap-4 border-y border-outline-variant py-4" use:reveal={{ delay: 100 }}
     >
         <span class="font-label-mono text-label-mono text-secondary mr-4"
             >Filter by:</span
@@ -120,7 +121,7 @@
         {/each}
     </div>
     <!-- Project Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" use:reveal={{ delay: 200 }}>
         {#each filteredProjects as project (project.id)}
             <a
                 href={project.url}
@@ -201,7 +202,7 @@
     </div>
     <!-- Documentation Link Section -->
     <section
-        class="mt-24 p-12 border border-primary bg-primary text-on-primary flex flex-col md:flex-row justify-between items-center gap-8"
+        class="mt-24 p-12 border border-primary bg-primary text-on-primary flex flex-col md:flex-row justify-between items-center gap-8" use:reveal
     >
         <div class="space-y-4">
             <h2 class="font-headline-md text-headline-md text-on-primary">
