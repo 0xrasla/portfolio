@@ -3,8 +3,8 @@
 	import Footer from "$lib/components/Footer.svelte";
 	import Header from "$lib/components/Header.svelte";
 	import Loader from "$lib/components/Loader.svelte";
-	import { cubicOut, cubicInOut } from "svelte/easing";
-	import { fly, fade } from "svelte/transition";
+	import { cubicInOut, cubicOut } from "svelte/easing";
+	import { fly } from "svelte/transition";
 	import "./layout.css";
 
 	let { children } = $props();
@@ -12,11 +12,11 @@
 </script>
 
 {#if initialLoading}
-	<div 
-		out:fly={{ y: -1500, duration: 1000, easing: cubicInOut }} 
-		class="fixed inset-0 z-[100] bg-background border-b-2 border-primary"
+	<div
+		out:fly={{ y: -1500, duration: 1000, easing: cubicInOut }}
+		class="fixed inset-0 z-100 bg-background border-b-2 border-primary"
 	>
-		<Loader onComplete={() => initialLoading = false} />
+		<Loader onComplete={() => (initialLoading = false)} />
 	</div>
 {/if}
 

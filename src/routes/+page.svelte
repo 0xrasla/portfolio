@@ -1,14 +1,17 @@
 <svelte:head>
-    <title>Thinesh Rasla | 0xRasla — My Coding Diary</title>
+    <title>Thinesh Rasla (0xRasla) — Full-Stack Dev from India</title>
     <meta
         name="description"
         content="I'm Thinesh Rasla (aka 0xRasla), a passionate full-stack developer from India. I build clean web & mobile apps with React, Svelte, and Flutter."
     />
-    <meta property="og:title" content="Thinesh Rasla | 0xRasla — My Coding Diary" />
+    <meta property="og:title" content="Thinesh Rasla (0xRasla) — Full-Stack Dev from India" />
     <meta property="og:description" content="I'm Thinesh Rasla (aka 0xRasla), a passionate full-stack developer from India. I build clean web & mobile apps with React, Svelte, and Flutter." />
-    <meta property="og:image" content="/og.png" />
+    <meta property="og:image" content="/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="/og.png" />
+    <meta name="twitter:image" content="/og.jpg" />
 </svelte:head>
 
 <main class="max-w-container-max mx-auto px-margin">
