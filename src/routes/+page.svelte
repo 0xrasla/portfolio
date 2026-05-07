@@ -99,6 +99,32 @@
             >
         </div>
     </section>
+    <!-- Services Section -->
+    <section class="py-24 border-b border-primary">
+        <div class="flex justify-between items-end mb-12 border-l-4 border-secondary pl-6">
+            <div>
+                <span class="font-label-mono text-label-mono text-secondary uppercase">Services</span>
+                <h2 class="font-headline-md text-headline-md uppercase mt-2">Areas of Focus</h2>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <div class="border border-primary p-8 hover:bg-surface-container transition-colors duration-200">
+                <span class="material-symbols-outlined text-4xl mb-6 text-secondary">web</span>
+                <h3 class="font-headline-sm text-headline-sm uppercase mb-4">Web Apps</h3>
+                <p class="font-body-md text-secondary">Building fast, responsive, and accessible web applications using modern frameworks like React and Svelte.</p>
+            </div>
+            <div class="border border-primary p-8 hover:bg-surface-container transition-colors duration-200">
+                <span class="material-symbols-outlined text-4xl mb-6 text-secondary">smartphone</span>
+                <h3 class="font-headline-sm text-headline-sm uppercase mb-4">Mobile Apps</h3>
+                <p class="font-body-md text-secondary">Creating cross-platform mobile experiences with Flutter and React Native that feel native and performant.</p>
+            </div>
+            <div class="border border-primary p-8 hover:bg-surface-container transition-colors duration-200">
+                <span class="material-symbols-outlined text-4xl mb-6 text-secondary">dns</span>
+                <h3 class="font-headline-sm text-headline-sm uppercase mb-4">Backend Systems</h3>
+                <p class="font-body-md text-secondary">Designing scalable architectures, robust APIs, and secure database structures using Node.js and modern tooling.</p>
+            </div>
+        </div>
+    </section>
     <!-- Featured Work Section -->
     <section class="py-24">
         <div
@@ -255,6 +281,37 @@
                     </div>
                 </div>
             </a>
+        </div>
+    </section>
+    <!-- Development Process Section -->
+    <section class="py-24 border-t border-primary">
+        <div class="flex justify-between items-end mb-12 border-l-4 border-secondary pl-6">
+            <div>
+                <span class="font-label-mono text-label-mono text-secondary uppercase">Process</span>
+                <h2 class="font-headline-md text-headline-md uppercase mt-2">How I Build</h2>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="flex flex-col gap-4 border border-primary p-6 hover:bg-surface-container transition-colors duration-200">
+                <div class="text-secondary font-headline-lg font-bold opacity-50">01</div>
+                <h3 class="font-headline-sm text-headline-sm uppercase border-b border-outline-variant pb-2">Discover</h3>
+                <p class="font-body-md text-secondary">Understanding requirements, user needs, and business goals to formulate a strategy.</p>
+            </div>
+            <div class="flex flex-col gap-4 border border-primary p-6 hover:bg-surface-container transition-colors duration-200">
+                <div class="text-secondary font-headline-lg font-bold opacity-50">02</div>
+                <h3 class="font-headline-sm text-headline-sm uppercase border-b border-outline-variant pb-2">Design</h3>
+                <p class="font-body-md text-secondary">Creating clean, accessible UI/UX mockups and planning the system architecture.</p>
+            </div>
+            <div class="flex flex-col gap-4 border border-primary p-6 hover:bg-surface-container transition-colors duration-200">
+                <div class="text-secondary font-headline-lg font-bold opacity-50">03</div>
+                <h3 class="font-headline-sm text-headline-sm uppercase border-b border-outline-variant pb-2">Develop</h3>
+                <p class="font-body-md text-secondary">Writing clean, maintainable code with a focus on performance and robustness.</p>
+            </div>
+            <div class="flex flex-col gap-4 border border-primary p-6 hover:bg-surface-container transition-colors duration-200">
+                <div class="text-secondary font-headline-lg font-bold opacity-50">04</div>
+                <h3 class="font-headline-sm text-headline-sm uppercase border-b border-outline-variant pb-2">Deploy</h3>
+                <p class="font-body-md text-secondary">Setting up CI/CD pipelines, monitoring, and ensuring a smooth launch.</p>
+            </div>
         </div>
     </section>
     <!-- Technical Expertise Grid -->

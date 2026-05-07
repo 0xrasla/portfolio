@@ -3,6 +3,7 @@
 	import Footer from "$lib/components/Footer.svelte";
 	import Header from "$lib/components/Header.svelte";
 	import Loader from "$lib/components/Loader.svelte";
+	import Cursor from "$lib/components/Cursor.svelte";
 	import { cubicInOut, cubicOut } from "svelte/easing";
 	import { fly } from "svelte/transition";
 	import "./layout.css";
@@ -37,4 +38,5 @@
 		</div>
 	{/key}
 	<Footer />
+	<Cursor />
 </div>
