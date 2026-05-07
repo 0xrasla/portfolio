@@ -10,7 +10,7 @@
 <div class="hidden md:flex gap-gutter items-center">
     {#each [
         { path: '/work', label: 'Work' },
-        { path: '/case-study', label: 'Expertise' },
+        { path: '/expertise', label: 'Expertise' },
         { path: '/about', label: 'About' },
         { path: '/contact', label: 'Contact' }
     ] as { path, label }}

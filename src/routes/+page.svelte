@@ -4,8 +4,14 @@
         name="description"
         content="I'm Thinesh Rasla (aka 0xRasla), a passionate full-stack developer from India. I build clean web & mobile apps with React, Svelte, and Flutter."
     />
-    <meta property="og:title" content="Thinesh Rasla (0xRasla) — Full-Stack Dev from India" />
-    <meta property="og:description" content="I'm Thinesh Rasla (aka 0xRasla), a passionate full-stack developer from India. I build clean web & mobile apps with React, Svelte, and Flutter." />
+    <meta
+        property="og:title"
+        content="Thinesh Rasla (0xRasla) — Full-Stack Dev from India"
+    />
+    <meta
+        property="og:description"
+        content="I'm Thinesh Rasla (aka 0xRasla), a passionate full-stack developer from India. I build clean web & mobile apps with React, Svelte, and Flutter."
+    />
     <meta property="og:image" content="/og.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -26,7 +32,7 @@
                 <span class="w-2 h-2 rounded-full bg-error"></span>
                 <span class="w-2 h-2 rounded-full bg-secondary"></span>
                 <span class="w-2 h-2 rounded-full bg-secondary"></span>
-                <span class="ml-2">System Initialized // 0xRasla v2.0</span>
+                <span class="ml-2">System Initialized // 0xRasla</span>
             </div>
             <div
                 class="font-label-mono text-label-mono mb-4 text-surface-variant"
@@ -116,7 +122,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
             <!-- Project 01 -->
             <a
-                href="/case-study"
+                href="/expertise"
                 class="group border border-primary p-6 flex-col gap-6 hover:bg-surface-container transition-colors duration-200 cursor-pointer block"
             >
                 <div
@@ -161,7 +167,7 @@
             </a>
             <!-- Project 02 -->
             <a
-                href="/case-study"
+                href="/expertise"
                 class="group border border-primary p-6 flex-col gap-6 hover:bg-surface-container transition-colors duration-200 cursor-pointer block"
             >
                 <div
@@ -206,7 +212,7 @@
             </a>
             <!-- Project 03 -->
             <a
-                href="/case-study"
+                href="/expertise"
                 class="group border border-primary p-6 flex-col gap-6 hover:bg-surface-container transition-colors duration-200 cursor-pointer block"
             >
                 <div

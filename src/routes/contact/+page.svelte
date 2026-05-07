@@ -4,32 +4,20 @@
 </svelte:head>
 
 <main class="grow max-w-container-max mx-auto px-margin w-full pt-16 pb-24">
-    <!-- Module Header -->
-    <header class="mb-16 border-b border-surface-variant pb-8">
-        <div
-            class="flex flex-col md:flex-row justify-between items-end gap-gutter"
-        >
-            <div>
-                <span
-                    class="font-label-mono text-label-mono text-on-secondary-container mb-4 block uppercase tracking-widest"
-                    >// SYSTEM_ACCESS</span
-                >
-                <h1 class="font-headline-lg text-headline-lg">
-                    Let's Work Together
-                </h1>
+    <!-- Header -->
+    <header class="flex flex-col md:flex-row justify-between items-end gap-gutter border-b border-primary pb-12 mb-12">
+        <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-2 mb-2 opacity-80 font-label-mono text-caption uppercase tracking-widest text-secondary">
+                <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                <span>Module // Contact.exe</span>
             </div>
-            <div
-                class="bg-surface-container px-4 py-2 border border-outline-variant flex items-center"
-            >
-                <span
-                    class="status-dot w-2 h-2 bg-secondary rounded-full inline-block mr-2 shadow-[0_0_8px_#505f76]"
-                ></span>
-                <span class="font-label-mono text-label-mono uppercase"
-                    >CURRENT_STATUS: <span class="text-secondary"
-                        >ACCEPTING_CLIENTS</span
-                    ></span
-                >
-            </div>
+            <h1 class="font-headline-lg text-headline-lg uppercase leading-tight text-primary">
+                System Access & <br class="hidden md:block"/> Let's Work Together.
+            </h1>
+        </div>
+        <div class="bg-surface-container px-4 py-2 border border-outline-variant flex items-center mb-2">
+            <span class="status-dot w-2 h-2 bg-secondary rounded-full inline-block mr-2 shadow-[0_0_8px_#505f76]"></span>
+            <span class="font-label-mono text-label-mono uppercase">SYSTEM_STATUS: <span class="text-secondary">ONLINE</span></span>
         </div>
     </header>
     <div class="grid grid-cols-1 md:grid-cols-12 gap-12">

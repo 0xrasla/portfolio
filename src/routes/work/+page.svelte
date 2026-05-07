@@ -87,14 +87,19 @@
 </svelte:head>
 
 <main class="grow w-full max-w-container-max mx-auto px-margin py-16">
-    <!-- Header Section -->
-    <section class="mb-16 border-l-4 border-secondary pl-8">
-        <h1 class="font-headline-lg text-headline-lg mb-4">Project Gallery</h1>
-        <p class="font-body-lg text-body-lg text-secondary max-w-2xl">
-            A curated selection of high-performance digital solutions and
-            architectures developed with a focus on efficiency and scalability.
+    <!-- Header -->
+    <header class="flex flex-col gap-4 border-b border-primary pb-12 mb-12">
+        <div class="flex items-center gap-2 mb-2 opacity-80 font-label-mono text-caption uppercase tracking-widest text-secondary">
+            <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            <span>Module // Projects.exe</span>
+        </div>
+        <h1 class="font-headline-lg text-headline-lg uppercase leading-tight text-primary">
+            Project Gallery & <br class="hidden md:block"/> Selected Works.
+        </h1>
+        <p class="font-body-lg text-body-lg text-secondary max-w-3xl mt-4">
+            A curated selection of high-performance digital solutions and architectures developed with a focus on efficiency and scalability.
         </p>
-    </section>
+    </header>
     <!-- Filter Bar -->
     <div
         class="mb-12 flex flex-wrap items-center gap-4 border-y border-outline-variant py-4"

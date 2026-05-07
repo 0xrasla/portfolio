@@ -16,31 +16,17 @@
 
 <main class="max-w-container-max mx-auto px-margin py-24">
     <!-- Hero Section -->
-    <section
-        class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-24 items-start"
-    >
-        <div class="md:col-span-8">
-            <div
-                class="inline-block border border-neon-green px-3 py-1 mb-6 bg-neon-green/5"
-            >
-                <span class="font-label-mono text-label-mono text-on-background"
-                    >Open for collaboration: <span
-                        class="text-primary-fixed-dim font-bold">TRUE</span
-                    ></span
-                >
+    <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-24 items-start border-b border-primary pb-12">
+        <div class="md:col-span-8 flex flex-col gap-4">
+            <div class="flex items-center gap-2 mb-2 opacity-80 font-label-mono text-caption uppercase tracking-widest text-secondary">
+                <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                <span>Module // About.exe</span>
             </div>
-            <h1 class="font-headline-xl text-headline-xl mb-8 uppercase">
-                My Approach
+            <h1 class="font-headline-lg text-headline-lg uppercase leading-tight text-primary">
+                My Approach & <br class="hidden md:block"/> Background.
             </h1>
-            <p
-                class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl"
-            >
-                I'm Thinesh Rasla (aka 0xRasla), a passionate full-stack
-                developer from Kanniyakumari, Tamil Nadu, India. I build clean
-                web and mobile apps with TypeScript, Svelte, React, and modern
-                backend stacks. I treat every line of code like a structural
-                beam, ensuring that the finished product is stable, scalable,
-                and built to last.
+            <p class="font-body-lg text-body-lg text-secondary max-w-3xl mt-4">
+                I'm Thinesh Rasla (aka 0xRasla), a passionate full-stack developer from Kanniyakumari, Tamil Nadu, India. I build clean web and mobile apps with TypeScript, Svelte, React, and modern backend stacks. I treat every line of code like a structural beam, ensuring that the finished product is stable, scalable, and built to last.
             </p>
         </div>
         <div class="md:col-span-4 flex justify-end">
