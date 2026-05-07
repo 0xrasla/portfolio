@@ -1,21 +1,31 @@
 <script lang="ts">
 	import { page } from "$app/stores";
-	import favicon from "$lib/assets/favicon.svg";
 	import Footer from "$lib/components/Footer.svelte";
 	import Header from "$lib/components/Header.svelte";
-	import { cubicOut } from "svelte/easing";
-	import { fly } from "svelte/transition";
+	import Loader from "$lib/components/Loader.svelte";
+	import { cubicOut, cubicInOut } from "svelte/easing";
+	import { fly, fade } from "svelte/transition";
 	import "./layout.css";
 
 	let { children } = $props();
+	let initialLoading = $state(true);
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
-
-<Header />
-{#key $page.url.pathname}
-	<div in:fly={{ x: -50, duration: 700, delay: 100, easing: cubicOut }}>
-		{@render children()}
+{#if initialLoading}
+	<div 
+		out:fly={{ y: -1500, duration: 1000, easing: cubicInOut }} 
+		class="fixed inset-0 z-[100] bg-background border-b-2 border-primary"
+	>
+		<Loader onComplete={() => initialLoading = false} />
 	</div>
-{/key}
-<Footer />
+{/if}
+
+<div class="min-h-screen">
+	<Header />
+	{#key $page.url.pathname}
+		<div in:fly={{ x: -50, duration: 700, delay: 100, easing: cubicOut }}>
+			{@render children()}
+		</div>
+	{/key}
+	<Footer />
+</div>

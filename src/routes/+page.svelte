@@ -125,7 +125,7 @@
                         Node.js
                     </div>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-2 mt-2">
                     <div class="flex justify-between items-center">
                         <h3 class="font-headline-sm text-headline-sm uppercase">
                             Logify
@@ -170,7 +170,7 @@
                         React
                     </div>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-2 mt-2">
                     <div class="flex justify-between items-center">
                         <h3 class="font-headline-sm text-headline-sm uppercase">
                             Dropit
@@ -215,7 +215,7 @@
                         Next.js
                     </div>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-2 mt-2">
                     <div class="flex justify-between items-center">
                         <h3 class="font-headline-sm text-headline-sm uppercase">
                             GitMatch

@@ -28,10 +28,11 @@
                 class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl"
             >
                 I'm Thinesh Rasla (aka 0xRasla), a passionate full-stack
-                developer from Kanniyakumari, Tamil Nadu, India. I build clean web and mobile apps with
-                TypeScript, Svelte, React, and modern backend stacks. I treat
-                every line of code like a structural beam, ensuring that the
-                finished product is stable, scalable, and built to last.
+                developer from Kanniyakumari, Tamil Nadu, India. I build clean
+                web and mobile apps with TypeScript, Svelte, React, and modern
+                backend stacks. I treat every line of code like a structural
+                beam, ensuring that the finished product is stable, scalable,
+                and built to last.
             </p>
         </div>
         <div class="md:col-span-4 flex justify-end">
@@ -41,7 +42,7 @@
                 <img
                     class="w-full h-full object-cover grayscale brightness-90 contrast-125"
                     alt="A professional portrait of a tech architect in a high-contrast black and white style. The lighting is sharp and cinematic, highlighting facial features against a clean, minimalist studio background. The overall aesthetic is modern, technical, and sophisticated, aligning with a high-end editorial portfolio look."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_wIFv86SAR81vTNIDocnL94q3IjsbiCxpAExsuc7GxPaoUVnEIv_JUFIjykUqwWFbtxwG4Z-KvDPp_F_DyMR7ciQmICad87nw46WOA9QdnaZp700fkYq-JBEyhbJJN-brT2F23Z3d0OOLzMXtwq66oqMcHKtm0mV13n1Ud1yXkl6sRnSv1q5Pk52oqn2F05CMaXa9MTCv_vbd7UMU5yTClYjTK5YlTrpufrzsTJjVAz2QGpA4myAUSybXA6caIGgFXN3uV40Fghs"
+                    src="/rasla.png"
                 />
             </div>
         </div>
