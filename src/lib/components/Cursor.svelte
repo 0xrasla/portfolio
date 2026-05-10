@@ -72,7 +72,7 @@
 			class:h-16={isHovering}
 			class:bg-secondary={isHovering}
 			class:opacity-20={isHovering}
-			style="left: {$cursor.x}px; top: {$cursor.y}px;"
+			style="left: {cursor.current.x}px; top: {cursor.current.y}px;"
 		></div>
 
 		<!-- Inner dot -->
