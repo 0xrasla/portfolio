@@ -192,7 +192,7 @@
         [01 / 03]
       </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter">
       <a
         href="https://github.com/0xrasla/logify"
         target="_blank"
