@@ -1,12 +1,6 @@
 <script>
   import { reveal } from "$lib/actions/reveal";
-  const filters = [
-    "All Projects",
-    "Svelte",
-    "TypeScript",
-    "UI Design",
-    "Backend",
-  ];
+  const filters = ["All Projects", "TypeScript", "UI Design"];
   let activeFilter = $state("All Projects");
 
   const allProjects = [
@@ -14,67 +8,45 @@
       id: "0xLOG1",
       title: "logify",
       icon: "terminal",
-      description: "An easy to use logger for elysia js.",
-      version: "v1.0.0",
+      description:
+        "A beautiful, fast, and type-safe logging middleware for Node.js (Elysia.js & Express.js). Features colorized output, structured file logging, request duration tracking, and a global logger instance.",
+      version: "v5.2.2",
       tech: "TypeScript",
       url: "https://github.com/0xrasla/logify",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuCNQ5w5UYyICjQ5Prcp0vSmNLqrl5kQjsJMzeQotBOubkJSVlkGtbys7iRtE4zppA_cGZfDny7N1iw8uWYCy7x5TrBM8E90HCYuGrWaxWd5_Et57OmcswF27iwEpE1bE3C49MX1onL539U_9rQK-IZQOSAUg31vIg-sy0QilrCWZFumbvGxMske14dpGyTPNsANhlsrk2urLfFcmx-joA2QwwqXh-wx_p7bBFA8GGMvkmMYmCr1OQcoaZVHGl-1Gip4ibfaTENTG2Q",
+      image: "/projects/1.png",
     },
     {
-      id: "0xDND2",
+      id: "0xIMG2",
+      title: "shadcn-image-uploader",
+      icon: "image",
+      description:
+        "A reusable React component for uploading, previewing, and cropping images built with Shadcn UI. Features drag & drop, file validation, interactive crop with zoom/pan, and customizable aspect ratio.",
+      version: "v1.0.0",
+      tech: "UI Design",
+      url: "https://github.com/0xrasla/shadcn-image-uploader",
+      image: "/projects/2.png",
+    },
+    {
+      id: "0xDRP3",
+      title: "dropit-react",
+      icon: "upload_file",
+      description:
+        "A simple, beautiful React drag-and-drop file picker built with shadcn/ui. Supports click-to-select, file type filtering, multi-file upload, file preview with names and sizes, and easy integration.",
+      version: "v1.0.0",
+      tech: "UI Design",
+      url: "https://github.com/0xrasla/dropit-react",
+      image: "/projects/3.png",
+    },
+    {
+      id: "0xDND4",
       title: "shadcn-dnd-kit",
       icon: "extension",
-      description: "shadcn styled drag and drop components",
+      description:
+        "A custom drag-and-drop component library built on react-dnd with shadcn/ui styling. Ships Draggable, Droppable, and DragAndDropProvider components with Kanban board and sortable list demos.",
       version: "v1.0.0",
       tech: "UI Design",
       url: "https://github.com/0xrasla/shadcn-dnd-kit",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuDWjLSm_Z_4mTo36oqUcbHV6tYLdNrtCX-uodrLH_Ud6xVFcW3Su0w0oTv0KYaBl00EBoGoQ-mSCd4H3mXasbQ2mrqJryZdOhgHkkoy7P7JzufFgzxQEqGmMXZLeQiOw37Oqn9iJJve8r1qYQQrH2Bv5DZKQQ79asghMfKlrklATffs03fhljZ00yg0yx7vms2UyhZTaynXECLybAr0Yl78krX3ieyVW_lvK663WGeu1lNvR-u4WaayDDTMThE6BwREPAQQUrbMkvI",
-    },
-    {
-      id: "0xBLG3",
-      title: "blog.rasla.me",
-      icon: "article",
-      description: "my personal tech blog.",
-      version: "v1.0.0",
-      tech: "TypeScript",
-      url: "https://github.com/0xrasla/blog.rasla.me",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuB-fok0azrJNzUpz9-InSwvMS6vf0R5tDh1nmaQyvcG3hGTu-DhAzpSNU_CCk3rWhEf3tMWikZz7-KHrmubf9HenvggDsQ8wYRNbpoo_VNnktK2xQ3e8hXeydJIeUywvVWk4KJR9ybPvTYgsUNboWlL29BGNPixI9h7pErtoNq_Ih57T_MQnaEgJIqxb4czaT6o6c-aSXl4SVLduASE8ldGy9ANI-_bjDTFIG5wmH5iHfKszhKA3doUFtBc0xlBWxNL6ZsoM3B8B3Y",
-    },
-    {
-      id: "0xPRT4",
-      title: "portfolio",
-      icon: "person",
-      description: "my latest personal portfolio",
-      version: "v2.0.0",
-      tech: "Svelte",
-      url: "https://github.com/0xrasla/portfolio",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuA0cPNelFlH1IzULiOwFFqf48VrOgPk2MJ6IH25gvrjCZG-fprGH27felhAw3m6Vgtpu1cNNZcSmxlV9SCs_XGVClvlxNQwqFLg8aO0izI97qgN3mxK5ByUTU3Mj-tK3Usqz1HH_DMPMiXGrFjUoBhGQmzlmIxvCl_jH6DBjhBZvz2BR03lLL0wMbLDHa8sAbDLZ6Mr43WxBoON0b7PRzVTRtowTyhASJ6hTDdvP18kNaWlreHSulVLjrhc8RouZXY4TEeqaLmXyNc",
-    },
-    {
-      id: "0xIPW5",
-      title: "ip-warden-js",
-      icon: "security",
-      description: "protect your apis from certain ip addresses.",
-      version: "v1.0.0",
-      tech: "TypeScript",
-      url: "https://github.com/0xrasla/ip-warden-js",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuBAQ9E790LCIi5Iqs4n4sNfRbaib6z6CMD4GGaAS4n5KZaVYuFBHaDnlnwuqapN5APs1BQhKsXXWqpfWSXeSfer2zcpxfkvNZUHdN-SjBMDUs5HRskmUb-rsLXs8g7zbXw0XLY5hZes-8svdkw8a4ixCU2x-_00HDh6BaQf4bHqmCD_bgdKUOJaySwU_2Q5OIknmTK1YH9tnxHh3F2rlcQygufgO9c5cZd1XKKCBoHMczedocwTWsGWxYeSG2z1wvPmQwRXhZpVnj0",
-    },
-    {
-      id: "0xDMP6",
-      title: "dump-download-manager",
-      icon: "download",
-      description: "a simple download manager coded using python",
-      version: "v1.0.0",
-      tech: "Backend",
-      url: "https://github.com/0xrasla/dump-donwload-manager",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuBVMJ0jkYWcOg1kiawHuuv2dZzSt11sJQRRK_JmDqgRP-FwxTKSAkCdPbZOjC-gIHugwDb3RfPR1tAR-VvMvX4giGRD_cL3tBPY76lff_SgYDfSulco1jHIxv2Z3FefKRfoBzhIhUMdi1YokSCiYQjUj_OgTrUAp-CztxXFXboUoBY3Fhd5TI18UoV0KiHTbiTY-dM0RIJOKZEtbHEzBzVGaN6CgW2ZROxtIOlnJHRnyselmPipAoGx2C-Zx7XS2H5IebM1KY1XDpU",
+      image: "/projects/4.png",
     },
   ];
 

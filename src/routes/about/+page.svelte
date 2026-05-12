@@ -246,7 +246,7 @@
       <!-- Entry 1 -->
       <div class="relative">
         <div
-          class="absolute left-[-53px] top-2 w-2.5 h-2.5 bg-primary-fixed-dim"
+          class="absolute -left-13.25 top-2 w-2.5 h-2.5 bg-primary-fixed-dim"
         ></div>
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
           <div class="md:col-span-3">
@@ -288,7 +288,7 @@
 
       <div class="relative">
         <div
-          class="absolute left-[-53px] top-2 w-2.5 h-2.5 bg-outline-variant"
+          class="absolute -left-13.25 top-2 w-2.5 h-2.5 bg-outline-variant"
         ></div>
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
           <div class="md:col-span-3">
@@ -330,7 +330,7 @@
 
       <div class="relative">
         <div
-          class="absolute left-[-53px] top-2 w-2.5 h-2.5 bg-outline-variant"
+          class="absolute -left-13.25 top-2 w-2.5 h-2.5 bg-outline-variant"
         ></div>
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
           <div class="md:col-span-3">

@@ -128,7 +128,7 @@
     <div class="w-1/2 flex flex-col items-end gap-2">
       <!-- Minimal Progress Line -->
       <div
-        class="w-full max-w-[200px] h-px bg-surface-container-high relative overflow-hidden"
+        class="w-full max-w-50 h-px bg-surface-container-high relative overflow-hidden"
       >
         <div
           class="absolute top-0 left-0 h-full bg-primary"
