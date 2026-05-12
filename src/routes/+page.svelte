@@ -189,7 +189,7 @@
       <div
         class="hidden md:block font-label-mono text-label-mono text-secondary"
       >
-        [01 / 04]
+        [01 / 03]
       </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter">
