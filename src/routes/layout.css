@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+
 @import 'tailwindcss';
 @import "tw-animate-css";
 @import "@fontsource-variable/inter";
@@ -11,7 +13,7 @@
   --font-headline-lg: 'Space Grotesk Variable', sans-serif;
   --font-headline-md: 'Space Grotesk Variable', sans-serif;
   --font-headline-sm: 'Space Grotesk Variable', sans-serif;
-  --font-label-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-label-mono: "Geist Mono", sans-serif;
 
   /* Colors */
   --color-surface: #f9f9f9;
