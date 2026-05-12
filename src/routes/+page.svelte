@@ -283,50 +283,7 @@
           </div>
         </div>
       </a>
-      <a
-        href="https://github.com/0xrasla/dropit-react"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="group border border-primary p-6 flex-col gap-6 hover:bg-surface-container transition-colors duration-200 cursor-pointer block"
-      >
-        <div
-          class="aspect-video bg-surface-container-high relative overflow-hidden"
-        >
-          <img
-            alt="DropIt preview"
-            class="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 transition-all duration-500"
-            src="/projects/3.png"
-          />
-          <div
-            class="absolute top-4 right-4 bg-secondary text-on-secondary px-3 py-1 font-label-mono text-caption font-bold"
-          >
-            React
-          </div>
-        </div>
-        <div class="flex flex-col gap-2 mt-2">
-          <div class="flex justify-between items-center">
-            <h3 class="font-headline-sm text-headline-sm uppercase">DropIt</h3>
-            <span
-              class="material-symbols-outlined text-primary group-hover:text-secondary group-hover:translate-x-1 transition-all"
-              >arrow_forward</span
-            >
-          </div>
-          <p class="font-body-md text-body-md text-secondary">
-            A simple, beautiful React drag-and-drop file picker built with
-            shadcn/ui and Tailwind CSS.
-          </p>
-          <div class="flex gap-2 mt-2">
-            <span
-              class="px-2 py-0.5 border border-outline font-label-mono text-[10px] text-secondary"
-              >UI COMPONENT</span
-            >
-            <span
-              class="px-2 py-0.5 border border-outline font-label-mono text-[10px] text-secondary"
-              >TAILWIND</span
-            >
-          </div>
-        </div>
-      </a>
+
       <a
         href="https://github.com/0xrasla/shadcn-dnd-kit"
         target="_blank"
