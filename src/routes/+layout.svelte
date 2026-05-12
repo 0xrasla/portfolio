@@ -16,9 +16,9 @@
   <!-- Global OG tags inherited by every page -->
   <meta property="og:locale" content="en" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content={$page.url.href} />
+  <meta property="og:site_name" content="Thinesh Rasla" />
   <meta property="og:logo" content="https://rasla.me/favicon-96x96.png" />
-  <meta property="og:site_name" content="0xRasla" />
+  <link rel="canonical" href="https://rasla.me{$page.url.pathname}" />
 </svelte:head>
 
 {#if initialLoading}

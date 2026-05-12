@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
 
-@import 'tailwindcss';
+@import "tailwindcss";
 @import "tw-animate-css";
 @import "@fontsource-variable/inter";
 @import "@fontsource-variable/space-grotesk";
 
 @theme {
-  --font-sans: 'Inter Variable', sans-serif;
-  --font-body-lg: 'Inter Variable', sans-serif;
-  --font-body-md: 'Inter Variable', sans-serif;
-  --font-caption: 'Inter Variable', sans-serif;
-  --font-headline-lg: 'Space Grotesk Variable', sans-serif;
-  --font-headline-md: 'Space Grotesk Variable', sans-serif;
-  --font-headline-sm: 'Space Grotesk Variable', sans-serif;
+  --font-sans: "Inter Variable", sans-serif;
+  --font-body-lg: "Inter Variable", sans-serif;
+  --font-body-md: "Inter Variable", sans-serif;
+  --font-caption: "Inter Variable", sans-serif;
+  --font-headline-lg: "Space Grotesk Variable", sans-serif;
+  --font-headline-md: "Geist Mono", sans-serif;
+  --font-headline-sm: "Geist Mono", sans-serif;
   --font-label-mono: "Geist Mono", sans-serif;
 
   /* Colors */
@@ -109,7 +109,7 @@
 }
 @utility text-label-mono {
   font-size: 14px;
-  line-height: 1.0;
+  line-height: 1;
   letter-spacing: 0.05em;
   font-weight: 500;
 }
@@ -118,7 +118,7 @@
   body {
     @apply bg-background text-on-background font-body-md technical-grid min-h-screen;
   }
-  
+
   @media (max-width: 767px) {
     :root {
       --spacing-margin: 20px;
@@ -127,18 +127,25 @@
 }
 
 @utility technical-grid {
-    background-size: 40px 40px;
-    background-image: linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
 }
 @utility cursor-blink {
-    &::after {
-        content: '_';
-        animation: blink 1s step-end infinite;
-    }
+  &::after {
+    content: "_";
+    animation: blink 1s step-end infinite;
+  }
 }
 @keyframes blink {
-    from, to { color: transparent }
-    50% { color: currentColor }
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: currentColor;
+  }
 }
 
 @custom-variant data-open (&[data-state="open"]);

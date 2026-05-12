@@ -218,7 +218,7 @@
       </div>
     {/if}
   </div>
-  <!-- Documentation Link Section -->
+
   <section
     class="mt-24 p-12 border border-primary bg-primary text-on-primary flex flex-col md:flex-row justify-between items-center gap-8"
     use:reveal
@@ -233,10 +233,13 @@
       </p>
     </div>
     <button
-      class="px-8 py-4 bg-secondary text-on-secondary font-label-mono text-label-mono font-bold hover:bg-primary hover:text-on-primary hover:border-on-primary transition-colors flex items-center gap-4 cursor-pointer"
+      class="px-8 py-4 bg-secondary text-on-secondary font-label-mono text-label-mono font-bold hover:text-on-primary hover:border-on-primary transition-colors flex items-center gap-4 cursor-pointer"
     >
-      Request Access <span class="material-symbols-outlined">arrow_forward</span
-      >
+      <a href="/contact" class="flex justify-center items-center gap-2">
+        Request Access <span class="material-symbols-outlined"
+          >arrow_forward</span
+        >
+      </a>
     </button>
   </section>
 </main>
